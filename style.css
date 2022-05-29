@@ -2,7 +2,7 @@ body{
     padding: 0;
     margin: 0;
     background-color: aqua;
-    height: auto;
+    height: 100px;
 }
 .main{
     align-items: center;
@@ -12,7 +12,7 @@ body{
 #box{
     background-color: aliceblue;
     display: flex;
-    height: 500px;
+    height: 600px;
     width: 90px;
     top: 50px;
     position: absolute;
@@ -21,6 +21,12 @@ body{
     height: 30px;
     width: 70px;
     transition: all 1s ease-out;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 0px 0px 14px;
+    margin: 0;
 }
 .text{
     height: 210px;
@@ -32,11 +38,33 @@ body{
     scrollbar-width: thin;
     scrollbar-color: rgb(144, 146, 148) rgb(250,250,250);
 }
+.content{
+    box-sizing: border-box;
+    width: 250px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: serif;
+}
 h2{
     position: absolute;
     right: 400px;
     bottom: 288px;
 }
 .profileinfo{
-    
+    z-index: 2;
+    position: absolute;
+    bottom: 158px;
+    padding: 10px 10px 10px 10px;
+}
+.aboutme{
+    display: grid;
+    grid-template-rows: 34px 101px 20px;
+    row-gap: 5px;
+    grid-template-columns: 50% 50%;
+    column-gap: 30px;
+    box-sizing: border-box;
+    width: 506px;
+    position: absolute;
+    right: 23px;
+    bottom: 0px;
+    height: 289px;
 }
